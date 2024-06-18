@@ -1,0 +1,41 @@
+@use 'sass:map';
+
+// colors
+$white: #FFFFFF;
+$blue-1: #1F1D2B;
+$blue-2: #252836;
+$blue-3: #2F3142;
+$blue-4: #3b3f4e;
+$blue-5: #525298;
+$blue-6: #08A0F7;
+$orange: #FFBF47;
+$red: #F83939;
+
+// shadows
+
+// grid
+$columns: 12;
+
+$offset: ("d": 64px, "t": 32px, "m": 16px);
+
+$container: (
+        "d": calc(1920px + #{map.get($offset, "d")} * 2),
+        "t": calc(1199px + #{map.get($offset, "t")} * 2),
+        "m": calc(767px + #{map.get($offset, "m")} * 2)
+);
+
+$grid-breakpoints: (
+        xs: 375px,
+        sm: 430px,
+        md: 768px,
+        lg: 1024px,
+        xl: 1280px,
+        xxl: 1360px,
+);
+
+// z-index
+$negative-z-index: -1;
+$elevated-z-index: 2;
+$upper-z-index: 5;
+$dropdown-z-index: 99;
+$popup-z-index: 999;

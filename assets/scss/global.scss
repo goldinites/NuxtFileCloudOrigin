@@ -1,0 +1,19 @@
+html,
+body,
+#__nuxt {
+  background-color: $blue-1;
+  color: $white;
+  height: 100%;
+  font-family: 'Proxima Nova', sans-serif;
+  @include font(14px, 20px);
+}
+
+#__nuxt {
+  display: flex;
+  flex-direction: column;
+  @include small-scroll();
+}
+
+main {
+  flex: 1 0 auto;
+}
