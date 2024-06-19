@@ -1,15 +1,3 @@
-<script setup lang="ts">
-const route = useRoute();
-console.log(route.fullPath);
-definePageMeta({
-  middleware: 'auth'
-})
-</script>
-
 <template>
-<div>{{route.fullPath}}</div>
+<div>123</div>
 </template>
-
-<style scoped lang="scss">
-
-</style>

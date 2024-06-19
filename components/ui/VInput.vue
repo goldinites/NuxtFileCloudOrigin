@@ -1,7 +1,17 @@
 <template>
-  <div class="input-wrapper">
+  <div
+      class="input-wrapper"
+      :class="{
+        'input-wrapper--disabled': disabled
+      }"
+      :style="`--icon-size: ${iconSize}px; --icon-indent: ${iconIndent}px`"
+      @click="$emit('click')"
+  >
     <input
         class="input"
+        :class="{
+          'input--with-icon': icon
+        }"
         :name="name"
         :type="type"
         :disabled="disabled"
@@ -13,9 +23,9 @@
         @change="$emit('change', $event.target.value)"
     >
     <nuxt-icon
-      v-if="icon"
-      class="input-icon"
-      :name="icon"
+        v-if="icon"
+        class="input-icon"
+        :name="icon"
     />
   </div>
 </template>
@@ -28,8 +38,10 @@ withDefaults(defineProps<{
   placeholder?: string;
   maxlength?: number | string;
   icon?: string;
+  iconSize?: number | string;
   value?: string;
   disabled?: boolean;
+  iconIndent: number | string,
 }>(), {
   name: '',
   placeholder: '',
@@ -38,29 +50,58 @@ withDefaults(defineProps<{
   autocomplete: 'off',
   value: '',
   disabled: false,
-  icon: undefined
+  icon: undefined,
+  iconSize: 20,
+  iconIndent: 6,
 });
 
-defineEmits(['input', 'change'])
+defineEmits(['input', 'change', 'click'])
 </script>
 
 <style lang="scss" scoped>
 .input {
+  $input: &;
+
   display: block;
   width: 100%;
   color: $white;
+  padding: 13px 16px;
+  @include font(20px, 120%, 600);
+  transition: 0.25s;
+
+  &--with-icon {
+    padding-right: calc(16px + var(--icon-indent) + var(--icon-size));
+  }
+
+  &::placeholder {
+    opacity: 1;
+  }
 
   &-wrapper {
+    position: relative;
     display: flex;
-    padding: 16px 20px;
-    background-color: $blue-2;
-    border-radius: 15px;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid $white;
+    border-radius: 22px;
     overflow: hidden;
+
+    &--disabled {
+      opacity: 0.5;
+
+      & #{$input} {
+        pointer-events: none;
+      }
+    }
   }
 
   &-icon {
-    width: 20px;
-    height: 20px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--icon-size);
+    height: var(--icon-size);
 
     &:deep(svg) {
       width: 100%;

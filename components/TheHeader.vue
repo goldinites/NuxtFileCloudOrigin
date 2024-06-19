@@ -13,7 +13,7 @@
         </div>
         <ul class="auth__menu">
           <li>
-            <NuxtLink class="auth__menu-item" to="/user">Профиль</NuxtLink>
+            <NuxtLink class="auth__menu-item" to="/personal">Профиль</NuxtLink>
           </li>
           <li>
             <button class="auth__menu-item">Выйти</button>

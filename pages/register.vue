@@ -1,15 +1,12 @@
 <template>
-  <AuthForm />
+  <RegisterForm/>
 </template>
 
 <script setup lang="ts">
-import AuthForm from "~/components/AuthForm.vue";
+import RegisterForm from "~/components/RegisterForm.vue";
 
 definePageMeta({
   layout: 'auth'
 })
 </script>
 
-<style scoped>
-
-</style>
