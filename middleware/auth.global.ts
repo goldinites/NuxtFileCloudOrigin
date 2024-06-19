@@ -1,4 +1,4 @@
-const isAuthenticated = true;
+const isAuthenticated = false;
 const LOGIN_PAGES_URLS = ['/login', '/register']
 
 export default defineNuxtRouteMiddleware((to, from) => {
