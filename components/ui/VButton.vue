@@ -40,7 +40,7 @@ defineEmits(['click'])
 .button {
   border: 2px solid $white;
   padding: 13px 16px;
-  @include font(20px, 130%, 600);
+  @include font(20px, 130%, 700);
   border-radius: 22px;
 
   &--transparent {
@@ -49,15 +49,6 @@ defineEmits(['click'])
 
   &--white {
     background-color: $white;
-  }
-  //background-color: $blue-5;
-  //color: $white;
-  //padding: 10px 20px;
-  //border-radius: 8px;
-  //transition: 0.25s;
-
-  &:hover {
-    //background-color: $blue-6;
   }
 }
 </style>

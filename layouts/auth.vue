@@ -18,7 +18,6 @@
   align-items: center;
   padding: 60px 0;
   flex: 1;
-  //min-height: 100%;
 
   &__inner {
     display: flex;
@@ -34,12 +33,12 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 32px;
+    gap: 24px;
   }
 
   &__icon {
-    width: 72px;
-    height: 72px;
+    width: 32px;
+    height: 32px;
     margin: 0 auto;
 
     &:deep(svg) {
@@ -53,11 +52,11 @@
   }
 
   &__title {
-    @include font(36px, 120%, 700);
+    @include font(33px, 120%, 700);
   }
 
   &__description {
-    @include font(20px, 130%, 600);
+    @include font(24px, 130%, 600);
     max-width: 250px;
     margin: 0 auto;
   }
