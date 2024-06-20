@@ -24,7 +24,7 @@
     flex-direction: column;
     gap: 48px;
     padding: 36px;
-    border-radius: 25px;
+    border-radius: 32px;
     background-color: $blue-2;
   }
 
@@ -33,12 +33,12 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 24px;
+    gap: 16px;
   }
 
   &__icon {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     margin: 0 auto;
 
     &:deep(svg) {
@@ -52,11 +52,11 @@
   }
 
   &__title {
-    @include font(33px, 120%, 700);
+    @include font(30px, 120%, 700);
   }
 
   &__description {
-    @include font(24px, 130%, 600);
+    @include font(20px, 130%, 600);
     max-width: 250px;
     margin: 0 auto;
   }

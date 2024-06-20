@@ -1,14 +1,5 @@
 @font-face {
   font-family: 'Proxima Nova';
-  src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
-  url('/fonts/ProximaNova/ProximaNova-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
   src: local('Proxima Nova Semibold'), local('ProximaNova-Semibold'),
   url('/fonts/ProximaNova/ProximaNova-Semibold.woff') format('woff');
   font-weight: 600;
@@ -21,6 +12,33 @@
   src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
   url('/fonts/ProximaNova/ProximaNova-Bold.woff') format('woff');
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Regular'), local('Manrope-Regular'),
+  url('/fonts/Manrope/Manrope-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Medium'), local('Manrope-Medium'),
+  url('/fonts/Manrope/Manrope-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Semibold'), local('Manrope-Semibold'),
+  url('/fonts/Manrope/Manrope-Semibold.woff') format('woff');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }

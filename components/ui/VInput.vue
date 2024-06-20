@@ -65,7 +65,7 @@ defineEmits(['input', 'change', 'click'])
   display: block;
   width: 100%;
   color: $white;
-  padding: 13px 16px;
+  padding: 16px;
   @include font(20px, 120%, 600);
   transition: 0.25s;
 

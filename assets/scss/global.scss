@@ -4,7 +4,7 @@ body,
   background-color: $blue-1;
   color: $white;
   height: 100%;
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: 'Manrope', sans-serif;
   @include font(14px, 20px);
 }
 
@@ -16,4 +16,14 @@ body,
 
 main {
   flex: 1 0 auto;
+}
+
+h1, h2 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
 }

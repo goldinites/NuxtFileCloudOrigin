@@ -31,7 +31,7 @@ const buttonClass = computed(() => {
   result.push(`button--${props.view}`);
 
   return result;
-})
+});
 
 defineEmits(['click'])
 </script>
@@ -39,7 +39,7 @@ defineEmits(['click'])
 <style lang="scss" scoped>
 .button {
   border: 2px solid $white;
-  padding: 13px 16px;
+  padding: 16px;
   @include font(20px, 130%, 700);
   border-radius: 22px;
 
